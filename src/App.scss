@@ -1,0 +1,21 @@
+thead, tfoot {
+    
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #3336ff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #0d81ee;
+  }
+  
+  tbody tr {
+    //Sbackground-image: url(noise.png);
+  }
+  
+  table {
+    background-color: #5f33ff;
+  }
