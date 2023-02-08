@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { consultApiAction } from "../actions/consultApiAction";
-
+import dateFormat from 'dateformat';
 
 const ListConsult = () => {
 
@@ -65,6 +65,7 @@ const ListConsult = () => {
                                     <td>{element.state}</td>
                                     <td>{element.probabilityofprecip}</td>
                                     <td>{element.relativehumidity}</td>
+                                    <td>{element.lastreporttime}</td>
                                     <td>{element.probabilityofprecip >= 60 ? <p>Si se cumple</p> : <p>No se cumple</p>}</td>
                                 </tr>
                             )
